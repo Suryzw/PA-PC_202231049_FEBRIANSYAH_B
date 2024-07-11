@@ -96,7 +96,7 @@ Kode ini melakukan operasi penyaringan rata-rata pada setiap piksel dalam gambar
     plt.show()
     ```
 **Hasil Perbandingan :** 
-![outputMean](outputMean.jpg)
+![outputMean](outputMean.png)
 
 Dapat dilihat bahwa gambar sebelah kiri, yaitu gambar asli memiliki tingkat kejelasan yang masih orginal dibandingkan gambar yang sudah difilter menggunakan mean pada gambar sebelah kanan. 
 
@@ -121,6 +121,8 @@ ax[1].set_title("Gambar Setelah Median")
 plt.show()
 
 ```
+
 **Hasil Analisis pada langkah 8 :**
 
+![ouputMedian](ouputMedian.png)
 Gambar asli `gbrDiri` disalin ke variabel `gbrMedian` untuk menjaga agar gambar asli tetap utuh selama pemrosesan. Kemudian, filter median dengan ukuran kernel 5x5 diterapkan pada salinan gambar ini menggunakan fungsi `cv2.medianBlur`, menghasilkan gambar baru yang disimpan dalam variabel `gbrMedianAfter`. Filter median berfungsi untuk mengurangi noise pada gambar dengan menggantikan nilai setiap piksel dengan nilai median dari piksel-piksel tetangganya dalam jendela kernel 5x5. Setelah pemrosesan selesai, gambar asli dan gambar hasil pemrosesan ditampilkan berdampingan menggunakan *Matplotlib*. Fungsi `plt.subplots` digunakan untuk membuat dua subplot dalam satu figur berukuran 10x10. Gambar asli ditampilkan pada subplot pertama (ax[0]) dengan skema warna grayscale dan diberi judul "Gambar asli". Gambar hasil filter median ditampilkan pada subplot kedua (ax[1]) dengan skema warna grayscale dan diberi judul "Gambar Setelah Median". Akhirnya, `plt.show()` dipanggil untuk menampilkan figur yang memuat kedua gambar tersebut.
