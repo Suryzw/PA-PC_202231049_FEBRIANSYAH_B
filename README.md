@@ -1,12 +1,6 @@
 
 # Laporan Praktikum UAS - Pengolahan Citra Digital B
 
-
-
-
-
-
-
 ## Authors
     Nama        : Febriansyah
     NIM         : 202231049
@@ -46,6 +40,7 @@
 4. Import gambar yang ingin digunakan, dalam hal ini saya gunakan file dengan nama **gbrDiri.jpg**.
 ![infoFoto](infoFoto.jpg)
 ![gbrDiri.jpg](gbrDiri.jpg)
+
 Menyimpannya ke dalam variabel `gbrDiri`. Setelahnya, kita mengkonversi gambar dari BGR ke RGB. Gunakan perintah berikut:
     ```
     gbrDiri = cv2.imread('gbrDiri.jpg') #untuk mengimport gambar 
@@ -102,6 +97,7 @@ Kode ini melakukan operasi penyaringan rata-rata pada setiap piksel dalam gambar
     ```
 **Hasil Perbandingan :** 
 ![outputMean](outputMean.jpg)
+
 Dapat dilihat bahwa gambar sebelah kiri, yaitu gambar asli memiliki tingkat kejelasan yang masih orginal dibandingkan gambar yang sudah difilter menggunakan mean pada gambar sebelah kanan. 
 
 ### Filtering Menggunakan Median
